@@ -1,0 +1,12 @@
+name = "roots"
+description = "Simple theme for simple person"
+license = "MIT"
+homepage = "https://github.com/huhu/juice"
+min_version = "0.11.0"
+demo = "https://juice.huhu.io"
+
+[extra]
+
+[author]
+name = "Huhu teams"
+homepage = "https://huhu.io"
