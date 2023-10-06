@@ -78,7 +78,7 @@
                 {% if h.children %}
                 {% for h2 in h.children %}
                 <div class="toc-item-child">
-                    <a class="subtext" href="{{h2.permalink | safe}}"><small>- {{ h2.title }}</small></a>
+                    <a class="subtext" href="{{h2.permalink | safe}}"><small>{{ h2.title }}</small></a>
                 </div>
                 {% endfor %}
                 {% endif %}
@@ -101,7 +101,7 @@
     {% block footer %}
     <footer>
         <small class="subtext">
-            Sylvaine AUSSIETTE © 2023 — contact@laramuredesmots.fr
+            Jane Doe © 2023 — <a href="mailto:contact@example.com">contact@example.com</a>
         </small>
     </footer>
     {% endblock footer %}
