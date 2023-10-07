@@ -124,9 +124,8 @@ You can customize some builtin property in `config.toml` file:
 
 ```toml
 [extra]
-juice_logo_name = "Juice"
-juice_logo_path = "juice.svg"
-juice_extra_menu = [
+theme_logo_path = "juice.svg"
+theme_extra_menu = [
     { title = "Github", link = "https://github.com/huhu/juice"}
 ]
 repository_url = "https://github.com/huhu/juice"

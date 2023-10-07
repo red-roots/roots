@@ -1,8 +1,15 @@
+.frontpage-heading {
+  font-family: var(--header-font-family);
+  font-size: 80px;
+  font-weight: 600;
+  margin: 0 auto 0 auto;
+  color: var(--primary-text-color);
+}
+
 .heading-text {
   font-family: var(--header-font-family);
-  font-size: 32px;
+  font-size: 35px;
   font-weight: 600;
-  padding: 10px 0 25px 0;
   margin-bottom: 0;
   color: var(--primary-text-color);
 }

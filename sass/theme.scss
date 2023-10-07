@@ -6,25 +6,39 @@
   font-family: 'Atkinson';
   font-weight: normal;
   font-style: bold;
-  src: url("/la-ramure-des-mots/fonts/Atkinson-Bold.woff2") format('woff2');
+  src: url("fonts/Atkinson-Bold.woff2") format('woff2');
 }
 @font-face {
   font-family: 'Atkinson';
   font-weight: bold;
   font-style: italic;
-  src: url("/la-ramure-des-mots/fonts/Atkinson-BoldItalic.woff2") format('woff2');
+  src: url("fonts/Atkinson-BoldItalic.woff2") format('woff2');
 }
 @font-face {
   font-family: 'Atkinson';
   font-weight: normal;
   font-style: italic;
-  src: url("/la-ramure-des-mots/fonts/Atkinson-Italic.woff2") format('woff2');
+  src: url("fonts/Atkinson-Italic.woff2") format('woff2');
 }
 @font-face {
   font-family: 'Atkinson';
   font-weight: normal;
   font-style: regular;
-  src: url("/la-ramure-des-mots/fonts/Atkinson-Regular.woff2") format('woff2');
+  src: url("fonts/Atkinson-Regular.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Sono';
+  font-weight: normal;
+  font-style: bold;
+  src: url("fonts/BeauRivage-Regular.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Dancing';
+  font-weight: normal;
+  font-style: bold;
+  src: url("fonts/DancingScript-Regular.otf") format('opentype');
 }
 
 body {
@@ -64,8 +78,9 @@ header {
 }
 
 .logo {
-  font-family: "Atkinson", serif;
-  font-size: 32px;
+  font-family: var(--header-font-family);
+  font-size: 40px;
+  font-weight: 600;
   color: var(--primary-text-color);
   display: flex;
   align-items: center;
@@ -73,8 +88,13 @@ header {
 
   img {
     width: 60px;
-    margin: 0 25px;
+    margin-right: 0.8rem;
   }
+}
+
+.frontpage-icon {
+  width: 10%;
+  margin-left: 0.4rem;
 }
 
 .nav-item {
@@ -87,6 +107,13 @@ header {
     color: var(--primary-text-color-over);
     text-decoration: underline;
   }
+}
+
+.nav-bar {
+  right: 0;
+  left: 0;
+  position: absolute;
+  background-color: transparent
 }
 
 .hero {
