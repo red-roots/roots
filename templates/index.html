@@ -19,40 +19,24 @@
         {{ macros::render_header() }}
     </header>
 
-    <div class="hero">
+    <div class="frontpage">
         {% block main %}
         <section class="text-center">
-            <h1 class="heading-text" style="font-size: 50px">
+            <h1 class="heading-text">
                 Go back to your roots
             </h1>
-            <img class="logo" style="width: 30%" src="{{ get_url(path='tree-alt.svg') }}">
             <h3 class="title-text">
                 Think about it
             </h3>
         </section>
         {% endblock main %}
 
-        <img class="hero-image" style="width: 35%" src="{{ get_url(path='tree.svg') }}">
+        <img class="frontpage-img" src="{{ get_url(path=config.extra.theme_frontpage_img_path) }}">
 
         <div class="explore-more text"
-            onclick="document.getElementById('qui-suis-je').scrollIntoView({behavior: 'smooth'})">
+            onclick="document.getElementById('juice').scrollIntoView({behavior: 'smooth'})">
             Faire défiler ⇩
         </div>
-        <style>
-            .hero section {
-                padding: 0 5rem;
-            }
-
-            @media screen and (max-width: 768px) {
-                .hero section {
-                    padding: 0 2rem;
-                }
-
-                .hero-image {
-                    display: none
-                }
-            }
-        </style>
     </div>
     {% endblock header %}
 

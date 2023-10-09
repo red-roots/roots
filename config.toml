@@ -1,7 +1,7 @@
 # The URL the site will be built for
 base_url = "/"
 
-title = "Roots - A simple Zola theme for simple people"
+title = "Roots"
 # default_language = "en"
 
 # Whether to automatically compile all Sass files in the sass directory
@@ -16,7 +16,8 @@ highlight_code = true
 highlight_theme = "inspired-github"
 
 [extra]
-theme_logo_path = "frontpage.svg"
+theme_logo_path = "img/logo.svg"
+theme_frontpage_img_path = "img/frontpage.svg"
 theme_extra_menu = [
     { title = "Github", link = "https://github.com/red-roots/roots" }
 ]
