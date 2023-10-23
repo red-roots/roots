@@ -16,7 +16,7 @@
 
     {% if config.extra.theme_extra_menu %}
         {% for menu in config.extra.theme_extra_menu %}
-        <a class="nav-item subtitle-text" href="{{ menu[1] | safe }}">{{ menu[0] }}</a>
+        <a class="nav-item subtitle-text" href="{{ menu.link | safe }}">{{ menu.title }}</a>
         {% endfor %}
     {% endif %}
 </nav>
