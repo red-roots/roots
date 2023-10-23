@@ -67,7 +67,7 @@ p > img {
 header {
   background-color: var(--primary-color);
   color: var(--primary-text-color);
-  font-family: var(--header-font-family);
+  font-family: var(--text-font-family);
   font-size: 1.6rem;
   font-weight: 600;
   padding: 0 8%;
@@ -100,6 +100,7 @@ header {
   margin: 0 10px;
   text-decoration: none;
   font-size: 1.2rem;
+  font-family: var(--text-font-family);
   font-weight: bold;
 
   &:hover {
