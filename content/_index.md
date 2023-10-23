@@ -3,11 +3,10 @@ title = "Roots"
 sort_by = "weight"
 +++
 
-# Juice
+# Roots
 
-**Juice** is an intuitive, elegant, and responsive Zola theme for product sites.
+**Roots** is a simple and responsive Zola theme.
 
-- Build for product sites
 - Simple and intuitive structure
 - Clean and elegant design
 - Responsive and mobile device compatible
@@ -21,34 +20,33 @@ First download this theme to your `themes` directory:
 
 ```bash
 $ cd themes
-$ git clone https://github.com/huhu/juice.git
+$ git clone https://github.com/huhu/roots.git
 ```
 
 or add as a submodule
 ```bash
-$ git submodule add https://github.com/huhu/juice  themes/juice
+$ git submodule add https://github.com/huhu/roots  themes/roots
 ```
 
 and then enable it in your `config.toml`:
 
 ```toml
-theme = "juice"
+theme = "roots"
 ```
 
 # Structure
 
-### Hero
+### Frontpage
 
-**Juice** is designed for product websites, hence we let **hero** part fills whole of screen.
-You can customize your **hero** by using `hero` block in the `templates/index.html`.
+You can customize your frontpage by overriding the `frontpage` block in the `templates/index.html`.
 
 ```html
-{% extends "juice/templates/index.html" %}
-{% block hero %}
+{% extends "roots/templates/index.html" %}
+{% block frontpage %}
     <div>
-        Your cool hero html...
+        Your cool frontpage html...
     </div>
-{% endblock hero %}
+{% endblock frontpage %}
 ```
 
 ### Page
@@ -98,25 +96,18 @@ You can override theme variable by creating a file named `_variables.html` in yo
 ```
 
 ### Favicon
-The same way as changing the `hero` block in the `templates/index.html`, you can change the **favicon**.
+The same way as changing the `frontpage` block in the `templates/index.html`, you can change the **favicon**.
 
 ```html
-{% extends "juice/templates/index.html" %}
+{% extends "roots/templates/index.html" %}
 {% block favicon %}
     <link rel="icon" type="image/png" href="/favicon.ico">
 {% endblock favicon %}
 ```
 
 ### Fonts
-If you changed the `--xy-font-family`-variable in `_variables.html`, you have to load the mentioned fonts in the `templates/index.html`.
+If you changed the `--xy-font-family` variable in `_variables.html`, you have to load the mentioned fonts in the `templates/index.html`.
 
-```html
-{% extends "juice/templates/index.html" %}
-{% block fonts %}
-    <link href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Babylonica&display=swap" rel="stylesheet">
-{% endblock fonts %}
-```
 
 # Configuration
 
@@ -124,30 +115,16 @@ You can customize some builtin property in `config.toml` file:
 
 ```toml
 [extra]
-theme_logo_path = "juice.svg"
+theme_logo_path = "roots.svg"
 theme_extra_menu = [
-    { title = "Github", link = "https://github.com/huhu/juice"}
+    { title = "Github", link = "https://github.com/huhu/roots"}
 ]
-repository_url = "https://github.com/huhu/juice"
 ```
-
-# Shortcodes
-
-**Juice** have some builtin shortcodes available in `templates/shortcodes` directory. 
-
-- `issue(id)` - A shortcode to render issue url, e.g. `issue(id=1)` would render to the link `https://github.com/huhu/juice/issue/1`.
-  
-> The `repository_url` is required.
 
 # Showcases
 
 Please see the [showcases page](/showcases).
 
-# Contributing
+# Acknowledgement
 
-Thank you very much for considering contributing to this project!
-
-We appreciate any form of contribution:
-
-- New issues (feature requests, bug reports, questions, ideas, ...)
-- Pull requests (documentation improvements, code improvements, new features, ...)
+Thanks you to [Huhu](https://github.com/huhu/juice) for the strong inspiration.

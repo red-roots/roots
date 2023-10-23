@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <title>{{ config.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg">
     {% include "_variables.html" %}
     <link rel="stylesheet" href="{{ get_url(path='theme.css') }}">
     {% block head %}
@@ -20,7 +20,7 @@
     </header>
 
     <div class="frontpage">
-        {% block main %}
+        {% block frontpage %}
         <section class="text-center">
             <h1 class="heading-text">
                 Go back to your roots
@@ -29,12 +29,12 @@
                 Think about it
             </h3>
         </section>
-        {% endblock main %}
 
         <img class="frontpage-img" src="{{ get_url(path=config.extra.theme_frontpage_img_path) }}">
+        {% endblock frontpage %}
 
         <div class="explore-more text"
-            onclick="document.getElementById('juice').scrollIntoView({behavior: 'smooth'})">
+            onclick="document.getElementById('roots').scrollIntoView({behavior: 'smooth'})">
             Faire défiler ⇩
         </div>
     </div>
