@@ -22,12 +22,13 @@
     <div class="frontpage">
         {% block frontpage %}
         <section class="text-center">
-            <h1 class="heading-text">
+            <h1 class="frontpage-heading">
                 Go back to your roots
             </h1>
-            <h3 class="title-text">
-                Think about it
-            </h3>
+            <img class="frontpage-icon" src="{{ get_url(path=config.extra.theme_frontpage_icon_path) }}">
+            <div class="div-centered">
+                <h3 class="heading-text">Think about it</h3>
+            </div>
         </section>
 
         {% endblock frontpage %}

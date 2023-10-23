@@ -18,6 +18,7 @@ highlight_theme = "inspired-github"
 [extra]
 theme_logo_path = "img/logo.svg"
 theme_frontpage_img_path = "img/frontpage.svg"
+theme_frontpage_icon_path = "img/frontpage-icon.svg"
 theme_extra_menu = [
     { title = "Github", link = "https://github.com/red-roots/roots" }
 ]
