@@ -31,10 +31,10 @@
             </div>
         </section>
 
+        <img class="frontpage-img" src="{{ get_url(path=config.extra.theme_frontpage_img_path) }}">
         {% endblock frontpage %}
 
-        <img class="frontpage-img" src="{{ get_url(path=config.extra.theme_frontpage_img_path) }}">
-        <div class="explore-more text"
+                <div class="explore-more text"
             onclick="document.getElementById('roots').scrollIntoView({behavior: 'smooth'})">
             Faire défiler ⇩
         </div>
@@ -42,7 +42,7 @@
     {% endblock header %}
 
     <main>
-        {% block toc %}
+    {% block toc %}
         {% if section.toc %}
         {% set toc = section.toc %}
         {% elif page.toc %}

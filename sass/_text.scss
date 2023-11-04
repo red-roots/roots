@@ -1,6 +1,6 @@
 .frontpage-heading {
   font-family: var(--header-font-family);
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 600;
   margin: 0 auto 0 auto;
   color: var(--primary-text-color);
@@ -15,7 +15,7 @@
 
 h1, .title-text {
   font-family: var(--text-font-family);
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 500;
   color: var(--primary-text-color);
   border-left: var(--primary-color) 8px solid;
@@ -25,13 +25,13 @@ h1, .title-text {
 h2, .subtitle-text {
   font-family: var(--text-font-family);
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--primary-text-color);
 }
 
 .text {
   font-family: var(--text-font-family);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0.2px;
@@ -43,4 +43,8 @@ h2, .subtitle-text {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.1px;
+}
+
+.bold-text {
+  font-weight: 600;
 }
