@@ -2,8 +2,9 @@
 {% set section = get_section(path="_index.md") %}
 <a href="{{ section.permalink | safe }}">
     <div class="logo">
+        <span>La Ramure</span>
         <img src="{{ get_url(path=config.extra.theme_logo_path) }}" alt="logo">
-        {{ config.title }}
+        <span>des mots</span>
     </div>
 </a>
 

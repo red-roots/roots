@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2em;
 }
 
 .box-shadow {
@@ -14,4 +13,8 @@
     display: flex;
     justify-content: center;
     align-items: end;
+}
+
+.margin-left {
+  margin-left: 5em;
 }

@@ -29,7 +29,7 @@
   padding: 0;
 }
 
-.content a {
+a {
   color: var(--primary-link-color);
 
   &:hover {
@@ -38,9 +38,9 @@
 }
 
 .content blockquote {
-  border-left: #e2dede 8px solid;
-  margin: 0;
-  background-color: #f2f1f0;
+  border-left: var(--primary-color) 8px solid;
+  margin: .5em 0 .8em 0;
+  background-color: #E7F5E0;
   padding: 0 20px;
 }
 
@@ -55,4 +55,5 @@
   margin-right: auto;
   width: 430px;
   margin-bottom: 1em;
+  border-radius: 15px;
 }
