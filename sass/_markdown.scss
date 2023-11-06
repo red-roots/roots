@@ -39,15 +39,21 @@ a {
 
 .content blockquote {
   border-left: var(--primary-color) 8px solid;
-  margin: .5em 0 .8em 0;
+  margin: .5em 0 .7em 0;
+  border-radius: 0 15px 15px 0;
   background-color: #E7F5E0;
-  padding: 0 20px;
+  padding: 0 .4em;
+}
+
+.content .content_block_1 blockquote {
+  text-align: center;
+  font-size: 22px;
 }
 
 .in_text {
   margin-left: auto;
   margin-right: auto;
-  width: 15%;
+  width: 8%;
 }
 
 .in_text_photo {

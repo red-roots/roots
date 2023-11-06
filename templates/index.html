@@ -34,13 +34,13 @@
         {% endblock frontpage %}
 
                 <div class="explore-more text"
-            onclick="document.getElementById('roots').scrollIntoView({behavior: 'smooth'})">
+            onclick="document.getElementById('main').scrollIntoView({behavior: 'smooth'})">
             Faire défiler ⇩
         </div>
     </div>
     {% endblock header %}
 
-    <main>
+    <main id="main">
     {% block toc %}
         {% if section.toc %}
         {% set toc = section.toc %}

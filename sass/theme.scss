@@ -66,6 +66,7 @@ p > img {
 
 main {
   justify-content: center;
+  height: 89vh;
 }
 
 
@@ -75,13 +76,13 @@ header {
   font-family: var(--text-font-family);
   font-size: 1.6rem;
   font-weight: 600;
-  padding: 0 8%;
+  padding: 0 5%;
   display: flex;
+  height: 13vh;
   box-sizing: border-box;
-  height: 10vh;
   align-items: center;
-  justify-content: space-between;
-  margin: 0;
+  flex-direction: column;
+  gap: 0.25em;
 
   .logo {
     display: flex;
@@ -89,15 +90,15 @@ header {
     box-sizing: border-box;
     align-items: center;
     font-family: var(--header-font-family);
+    font-size: 1.5em;
   }
 
   .logo span {
-    margin-top: .6em;
+    margin-top: .4em;
   }
 
   a {
     color: var(--primary-text-color);
-    height: 10vh;
   }
 
   img {
@@ -108,10 +109,16 @@ header {
 
 .nav-item {
   margin: 0 10px;
-  text-decoration: none;
   font-size: 1.2rem;
   font-family: var(--text-font-family);
   font-weight: bold;
+  background: #E7F5E0;
+  color: black;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 500px;
+  cursor: pointer;
 
   &:hover {
     color: var(--primary-text-color-over);
@@ -119,17 +126,12 @@ header {
   }
 }
 
-.nav-bar {
-  background-color: var(--primary-color);
-}
-
 .frontpage {
   display: flex;
   //box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  position: relative;
-  height: 90vh;
+  height: 87vh;
   background-color: var(--primary-color);
 
   .frontpage-img {
@@ -158,7 +160,7 @@ header {
   }
 
   .frontpage-profile {
-    max-width: 40%;
+    max-width: 50%;
   }
 
   h1 {
@@ -183,17 +185,18 @@ header {
 
 .box_test {
   background-color: #E7F5E0;
-  height: 70%;
+  height: 80%;
   width: 90%;
   display: flex;
   border-radius: 15px;
   align-items: center;
   margin-bottom: 10vh;
+  text-align: justify;
 }
 
 main {
   display: flex;
-  padding: 20px 100px;
+  padding: 20px 0 20px 0;
   flex-grow: 1;
 
   .toc {
@@ -238,11 +241,11 @@ main {
   cursor: pointer;
 }
 
-
 .main-box {
   width: 50%;
   min-width: 600px;
 }
+
 
 .flex {
   display: flex;
@@ -271,12 +274,12 @@ main {
 }
 
 footer {
-  padding: 50px;
+  padding: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary-color);;
+  background-color: var(--primary-color);
 
   a {
     color: black;
@@ -284,23 +287,42 @@ footer {
   }
 }
 
+.quote_author {
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: bold;
+  font-style: italic;
+}
+
 @media screen and (min-width: 1280px) {
+  header {
+    //flex-direction: column;
+    padding-bottom: 0.5em;
+  }
+
   .content {
-    max-width: 90%;
     min-width: 800px;
+    justify-content: space-between;
   }
 }
 
 @media screen and (max-width: 768px) {
   header {
-    height: 15vh;
     flex-direction: column;
-    justify-content: space;
+    padding-bottom: 0.5em;
   }
 
   .nav-item {
     margin: 0 5px;
     font-size: 14px;
+    background: #E7F5E0;
+    color: black;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 500px;
+    font-size: 18px;
+    cursor: pointer;
   }
 
   .frontpage{
