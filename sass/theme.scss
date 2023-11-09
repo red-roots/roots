@@ -70,14 +70,13 @@ header {
   font-family: var(--text-font-family);
   font-size: 1.6rem;
   font-weight: 600;
-  padding: .5% 5%;
-  height: 10vh;
+  padding: .9% 4%;
+  height: 13vh;
   display: flex;
   box-sizing: border-box;
   align-items: center;
-  justify-content: space-between;
-  //flex-direction: column;
-  //gap: 0.2em;
+  flex-direction: column;
+  gap: 0.3em;
 
   .logo {
     height: 5vh;
@@ -85,7 +84,7 @@ header {
     align-items: center;
     justify-content: center;
     font-family: var(--header-font-family);
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-right: 1em;
   }
 
@@ -99,7 +98,7 @@ header {
 
   img {
     max-height: 100%;
-    margin-bottom: 0.8em;
+    margin-bottom: 0.5em;
   }
 
  /* nav {
@@ -130,9 +129,9 @@ header {
   display: flex;
   box-sizing: border-box;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
-  height: 90vh;
+  height: 87vh;
   background-color: var(--primary-color);
 
   h1 {
@@ -153,6 +152,8 @@ header {
 
 .explore-more {
   cursor: pointer;
+  position: absolute;
+  bottom: 0.25em;
 }
 
 .frontpage-heading-text {
@@ -196,7 +197,7 @@ header {
   display: flex;
   border-radius: 15px;
   align-items: center;
-  margin-top: 7vh;
+  margin-bottom: 6vh;
   text-align: justify;
   padding: 1em;
 }
@@ -301,17 +302,12 @@ footer {
 }
 
 @media screen and (min-width: 1280px) {
-  header {
-    //flex-direction: column;
-    padding-bottom: 0.5em;
-  }
-
   .content {
     width: 70%;
   }
 
   .box_test {
-    height: 70%;
+    height: 75%;
   }
 }
 
