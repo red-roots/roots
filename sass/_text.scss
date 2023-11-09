@@ -1,6 +1,6 @@
 .frontpage-heading {
   font-family: var(--header-font-family);
-  font-size: 60px;
+  font-size: 3.5rem;
   font-weight: 600;
   margin: 0 0 .2em 0;
   color: var(--primary-text-color);
@@ -36,6 +36,7 @@ h2, .subtitle-text {
   line-height: 26px;
   letter-spacing: 0.2px;
   color: var(--primary-text-color);
+  text-align: justify;
 }
 
 .subtext {
