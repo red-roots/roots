@@ -76,7 +76,7 @@ header {
   box-sizing: border-box;
   align-items: center;
   flex-direction: column;
-  gap: 0.3em;
+  gap: .4em;
 
   .logo {
     height: 5vh;
@@ -147,7 +147,7 @@ header {
 .frontpage-profile {
   width: 50%;
   height: 100%;
-  overflow: crop;
+  justify-content: center;
 }
 
 .explore-more {
@@ -307,7 +307,7 @@ footer {
   }
 
   .box_test {
-    height: 75%;
+    height: 77%;
   }
 }
 
